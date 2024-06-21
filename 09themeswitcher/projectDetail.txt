@@ -1,0 +1,20 @@
+🎢Context Api => Part # 2🎢
+
+💢 
+    In this project We learn Context Api full course step by Step but with 2nd aproch
+
+💢
+    Now Step by Step Start our project
+
+💢 Step : 1 => Create a folder in src folder with name {context}
+
+        ab sb sy phly hm is folder mn aik file bnanen gy jis ka name ho ga {Theme.js}
+
+        ab hm yhn py thora sa diff approch use kr rhy hn context ka sath as comapir to jo hm ny project number # 8 mn deakha tha us sy, ab wo kia h us ky leye hm is file mn directly jaen gy or explore kren gy sub kuch detail mn 
+
+💢 Step : 2 => 
+        jb hm step 1 ky through jaen gy files mn or har file mn hmen next file ki        direction milti jy gi 
+
+💢 Step : 3 => This is last Step an d [v.v.v.Imp] step
+
+        in this step we go to tailwind.config.js file and make changes in it to and external confige in it which is [darkMode]

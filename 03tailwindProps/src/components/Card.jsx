@@ -1,0 +1,26 @@
+import React from "react";
+// is mn hm ny function mn {} lga ky object ko destructure kia h or props lokhny ki bjy direct hi userName wgera likh dia h kam us sy b ho jy ga but is sy ya hota h readabality shi hoti h or hm idhr hi by default values dy dety hn i.e{btnTxt = "My Profile" yani agr ko btnTxt ki value component mtan app.jsx  mn likhna bhol gya to ya by default value use ho jy gi }
+function Card({ userName, btnTxt = "My Profile" }) {
+  return (
+    <div class="relative h-[400px] w-[300px] rounded-md m-4">
+      <img
+        src="https://images.unsplash.com/photo-1546961329-78bef0414d7c?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHVzZXJ8ZW58MHx8MHx8&amp;auto=format&amp;fit=crop&amp;w=800&amp;q=60"
+        alt="AirMax Pro"
+        class="z-0 h-full w-full rounded-md object-cover"
+      />
+      <div class="absolute inset-0 bg-gradient-to-t from-gray-900 to-transparent"></div>
+      <div class="absolute bottom-4 left-4 text-left">
+        <h1 class="text-lg font-semibold text-white">{userName}</h1>
+        <p class="mt-2 text-sm text-gray-300">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi,
+          debitis?
+        </p>
+        <button class="mt-2 inline-flex cursor-pointer items-center text-sm font-semibold text-white">
+          {btnTxt} →
+        </button>
+      </div>
+    </div>
+  );
+}
+
+export default Card;

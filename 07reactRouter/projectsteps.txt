@@ -1,0 +1,59 @@
+##### In This project we study about React Router Dom #####
+
+==> Steps For React Router 
+
+ => Step # 1️⃣ build all components, for this  create a component folder in src file 
+
+Note 💌 :- Sir hitesh best practes about component struchter 🔻
+
+🛑 1st creat components folder and then create all folder with the name as file name we creat mean made header and footer folder 1st in component folder and then create heard.jsx file and footer.jsx file respectuly
+
+=> Step 2️⃣ :- Install react router
+    💥Go to reactrouter.com
+    💥Go to tutorial option in sidebar
+    💥Use this command [npm install react-router-dom ] and run in terminal 
+    💥Your react router Installed successfully
+
+=> Step 3️⃣ :- Copy all components code from hitesh sir github and Step by step made them
+        
+        💥Go to these component one by one and explore them there
+
+=> Step 4️⃣ :- Now after components bulding now we Make a setup for header and footer components 
+
+        💢 
+        is mn hm kia kren gy ky mian chata hn ky mera header or footer hamesha same rhy or un ky andr ky components change hoty rhen mn yhi chata hn to is ky leye mn kia kroun ga apny home ky ander alg sy header or footer dal dn ga contactus mn alg sy isi thra mn kam kroun ga ya b h thk h ho jata h kam liken ya itna optimised tareka ni h 
+
+        💢 
+        So is ky leye hm aik or approch deakhty hn ky aik kam kreye ky {src} mn aik new file bnyea or is file ka name log aksar {Root} b deaty hn liken hm yhn py apni mrzi ka name {layout.jsx}
+
+        💢
+        now go to this file and explore in detail
+
+=> Step 5️⃣ :- Now after completing Layout.jsx now we use our react router 
+
+    Note 💌 :- for this video hamen app.jsx ki zarort hi ni h hm sara kam apny mian.jsx mn kren gy 
+
+        💢 Now go to Main.jsx and explore recat router with step by step detail
+
+=> Step 6️⃣:- Now after completing Routing 
+
+        💢
+        now mn chata hn ky aik aesa path banoun jis mian mn URL sy Kuch data lena chta hn jesyy
+
+        https://github.com/hiteshchoudhary/chai-aur-react/blob/$234/reactRouterNotes.md
+
+        is link sy mn for example {$234} leana chta hn wo kesy ln ga 
+
+        💢
+        So is ky leye hm components mn aik new folder banen gy User ky name sy or us ky ander user.jsx file bnaen gy 
+
+        💢
+        now go to user.jsx file and explore it step by step
+
+=> Step 7️⃣:- Now after completing Params Concept 
+
+        💢
+        ab hm aik new component bnaty hn jis ka name h Github or us ky ander Github.jsx file bnaty hn 
+
+        💢
+        now go to Github.jsx file and explore it step by step

@@ -1,0 +1,35 @@
+🎢Context Api =>With Local Storage🎢
+
+🧨
+In this Project we bulid a [TO Do] app which add task , delete task and edite task and also when we add any task it should not be delet when we reload page unless we delet it manually and this thing is done by concept of [Local Staorage] so we also undersatnd how to store data in local storage 
+🧨
+
+💢 Setup project 
+
+        we setup project with same method to insatall react with vite and also insatalll tailwind in it
+💢 Now step by step project building
+
+
+💢 Step # 1 [Make a Context Folder]
+
+    In this we creat context folder in our src folder beacuse we put our all context files in this folder
+
+💢 Step # 2 [make context file]
+
+    In this we made a file in context folder which is [ToDoContext.js] and in this file we put our all context about TODO in it 
+
+    now go to this [ToDoContext.js] file and explore our working step by step
+
+💢 Step # 3 [make index.js file]
+
+     In this we made a file in context folder which is [index.js]   now go to this [index.js] file and explore our working step by step
+
+     this is optional file agr ap chao to bnao na chao to na bnao  koi isue ni h 
+
+💢 Step # 4  
+
+    now we go to app.jsx Q ky asli kam when py hi ho ga wahen py hm funcationalies ko build kren gy ot mian chz LOCAL Storage ky about study kren gy so go to app.jsx and explore it
+
+💢 Step # 5
+
+    now we bulid our components one by one for this we create a folder with name is components and then create file TodoForm.jsx and TOdoItems.jsx and last create Index.js file last file is leye banai taky sari chezoun ko is file mn aik sath ly ln now go to files one by one and explore them step by step 

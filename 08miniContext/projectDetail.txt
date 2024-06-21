@@ -1,0 +1,51 @@
+🎢Context Api => Part # 1🎢
+
+💢 
+    In this project We learn Context Api full course step by Step 
+💢 
+    Now underStand what is the purpose of context api lets explain
+
+💢  for example : 
+
+            agr hmry pass aik admin borde h or us mn bhot sy components use ho rhy hn or sary compenets aik dusry ky ander nested hn or hm aik props pass krty hn app.jsx ky through or jis component ko pass krna h wo 3 sy 4 component ky ander nested h to hm ny us component ko prop pass krny ky leye to hmen one by one sub oun components ko wo prop pass krna pry ga ta ky hm apny desire component ko apny prop sy {data} pass kr sken to is mn isue ya tha ky jo hmra mian component tha jis ko prop sy {data} pass krna tha us ky leye to thk tha but baqi ky  3 sy 4 components ko jo jo prop pass kia gia sirf is leye ky hmry disire component ko prop pass kia ja sky wo un component ky kam ka ni tha na props to us chz ko hall krny ky leye aik chz ki gaii 
+
+            is problem ko hal krny ky leye ya aproch use ki gai jo ky hamen React ky aik hook sy milta h Jo h [useContext] is hook sy hm apny Variables ko globel state mn rakh ky jhn mrzi dill kry jis component ko pass krna ho directly access dy dety hn 
+
+            is ky about mazed agy deakhyn gy deatail mn abhi project set krty hn mean setup install krty hn 
+
+💢
+    is project mn hm tailwind wagera ni use kren gy
+    or is mn or b kuch b adtional install krny ki zarort ni h Q ky Context api ka concept hmrey React ky sath hi ata h 
+
+    ya state management itna commen problem tha ky React ny eventually socha Day 1 py ni tha eventually socha ky esa kuch hmary ander b hona chy direct State management apni react ki  Labirary ko or sastanable bnany ky leye is leye unhoun ny directly whn py is ko add kr dea h 
+
+💢
+    Axha, ab is ko deakhty kesy hn, sochty kesy hn, wo sb sy importent h. Deakhyea Context ka kia h ap kbhi b kisi b Project mn bad mn b inject kr skty hn or phly b kr skty hn agr ap ko pta h ap ka project thora sa b complex hony wala h ya good practeses wagera follow krni hn to Almost React ky sbhi projects mn State management lgta h zarori ni h ky sb mn ho but Almost sbhi mn lgta h agr koi {Server} sy deal kr rhy ho ya {Api} sy deal kr rhy ho thora complex project h Resume mn add like h us mn state mangment hota hi hota h 
+
+💢
+    Now Step by Step Start our project after Installation prosess completion and all information above 
+
+
+💢 
+    Deakhen hmen handel krna h Context Api ko Context Appi mtlb aik Globel variable bna rha hn us variable ky ander sara data jy ga but Q k React h State hm ny deakh h itna asani sy update ni ho jata h agr hota to hm directly aik globelVariable.js name sy file bna lety or whn sy values ley lety but wo axha syntax ni h hm eventually ja ky usi same problem mn phanc jaen gy jo solve krny ki try kr rhy hn ky State miss match h Syncronization ni h  isi leye 
+
+    ya idea hmra thk h ky aik globel file bna lo globle.js or usi ky ander sary variable rkh lo, hn rakh skty ho liken ap ka project hr jagha sy problem mn aa jy ga Q ky koi b variable us ko update kr d ga jhn ap ni chty whn b update ho jy ga ya aik problem ata h to 
+
+💢 Step : 1 => Create a folder in src folder with name {context}
+
+        isi name sy ziada tar ya folder rakha jata h but is mn koi naming ristriction ni h Q ky frammwork ni h aik library hi to library mn naming convention itna strong ni hota h 
+
+        ab sb sy phly hm is folder mn aik file bnanen gy jis ka name ho ga      {userContext.js} jsx ni h is mn sirf {js} h Q ky is mn pure and pure {JavaScript} hi use hoti h aksar
+
+        
+        now go to our userContext.js file and explore it
+
+💢 Step : 2 => After Creating Globle Context now we create some components
+
+
+        we create components bcz we use them in app.jsx and explore our Globel context functionallity 
+
+        our components should b logIn.jsx and Profile.jsx hm ny 2 components bn leye ab hm aik mn data kis thra sy access hota h wo deakh lean gy, or aik mn Data kis thra sy send hota h dta wo deakh lena gy 
+
+        
+💢 Step : 3 => After Creating LogIn.jsx and Profile.jsx now go to app.jsx
