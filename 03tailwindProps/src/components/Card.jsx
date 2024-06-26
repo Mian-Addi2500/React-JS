@@ -1,5 +1,5 @@
 import React from "react";
-// is mn hm ny function mn {} lga ky object ko destructure kia h or props lokhny ki bjy direct hi userName wgera likh dia h kam us sy b ho jy ga but is sy ya hota h readabality shi hoti h or hm idhr hi by default values dy dety hn i.e{btnTxt = "My Profile" yani agr ko btnTxt ki value component mtan app.jsx  mn likhna bhol gya to ya by default value use ho jy gi }
+// is mn hm ny function mn {} lga ky object ko destructure kia h or props likhny ki bjy direct hi userName wgera likh dia h kam us sy b ho jy ga but is sy ya hota h readabality shi hoti h or hm idhr hi by default values dy dety hn i.e{btnTxt = "My Profile" yani agr ko btnTxt ki value app.jsx  mn likhna bhol gya to ya by default value use ho jy gi }
 function Card({ userName, btnTxt = "My Profile" }) {
   return (
     <div class="relative h-[400px] w-[300px] rounded-md m-4">
