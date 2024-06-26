@@ -6,11 +6,11 @@ ya aik password generator Project h is mn ham password ko generate kren gy but i
 
 1) is mn hm jesy deakhty hn ky by default aik password generated h or jessy hi page ko reload krty hn wo dubara pasword generate ho jata h ya kesy kren gy ya hm deakhen gy 
 
-2)is mn aik {LENGTH} h or jessy hi us ko change krty hn waps mn koi na koi method run hota h jo pasword ko generate krta h or ab ki bar password ki length hamry length waly valiue ky mutabic h
+2)is mn aik {LENGTH} h or jessy hi us ko change krty hn waps mn koi na koi method run hota h jo pasword ko generate krta h or ab ki bar password ki length hamry length waly value ky mutabic h
 
-3) is mn aik {Number} h or jessy hi us ko ki value ko true ya false krty hn  hn waps mn koi na koi method run hota h jo pasword ko generate krta h or ab ki bar pasword mn kuch numbers b add ho gy hn 
+3) is mn aik {Number} h or jessy hi us ki value ko true ya false krty hn to waps mn koi na koi method run hota h jo pasword ko generate krta h or ab ki bar pasword mn kuch numbers b add ho gy hn 
 
-4) is mn aik {Charactor} h or jessy hi us ko ki value ko true ya false krty hn  hn waps mn koi na koi method run hota h jo pasword ko generate krta h or ab ki bar pasword mn kuch char b add ho gy hn 
+4) is mn aik {Charactor} h or jessy hi us ko ki value ko true ya false krty hn  waps mn koi na koi method run hota h jo pasword ko generate krta h or ab ki bar pasword mn kuch char b add ho gy hn 
 
 5) is mn aik {Copy} ka button b h jessy hi us ko click kren gy to input filed mn spicificaaly pasword select hoga koi or jagha ni ho gi to hm specifacilly kisi jagha ko target kren deakhen gy
 
@@ -25,29 +25,29 @@ function App() {
   const [length, setLength] = useState(8);
   const [numberAllowed, setNumberAllowed] = useState(false); //number should be allowed or not
   const [charAllowed, setCharAllowed] = useState(false); //Char should be allowed or not
-  const [password, setPassword] = useState(""); //input filed mn pasword ko add krny ky leye hm pasword ko b kisi nba kisi varaiable mn store zaror kren gy to us ky leye b useState lgy ga or us ki value by default "" rkhen gy wesy to hm koi apna default password dy skty thy but hm chaty hn jesy hi page relod ho har bar new pasword aye to us ky leye hm pasword ko generate krewaen gy kisi database sy value ly ky ya koi api call kr ky hm value lean gy or us ko pasword mn store krwaen gy ab ya kesy hoo ga hm agy deakhty hn
+  const [password, setPassword] = useState(""); //input filed mn pasword ko add krny ky leye hm pasword ko b kisi na kisi varaiable mn store zaror kren gy to us ky leye b useState lgy ga or us ki value by default "" rkhen gy wesy to hm koi apna default password dy skty thy but hm chaty hn jesy hi page relod ho har bar new pasword aye to us ky leye hm pasword ko generate krewaen gy kisi database sy value ly ky ya koi api call kr ky hm value lean gy or us ko pasword mn store krwaen gy ab ya kesy hoo ga hm agy deakhty hn
 
   //Step (2) ==> now we make a Pasword Generator Method
 
   /*
-  we made semple pasword generaator method which is
+  we made simple pasword generaator method which is
 
   const passwordGenerator = () => {}; 
 
-  let suppose this is our method but we have problem that ky hm ny deakha ky jesy hi hm lentght , number ya char mn koi changing krty hn ya method hr bar run ho rha h to koi to aesa tareka hota ho ga ky is method ko mn optimise kr ln to is ky leye b react hmen hook deata h 
+  let suppose this is our method but we have problem that ky hm ny deakha ky jesy hi hm length , number ya char mn koi changing krty hn ya method hr bar run ho rha h to koi to aesa tareka hota ho ga ky is method ko mn optimise kr ln to is ky leye b react hmen hook deata h 
   */
 
   /* [useCallback]
 
   useCallback is a React Hook that lets you cache(memorise) a function definition between re-renders.
 
-  means ky ya hool ap ky function ko cache yani momery mn rakh leta h or jitna part fuction ka dubara sy run krny mn use ho rha h kr lo or jo ni ho pa rha wo ni ho pa rha bs or ya sub kuch react behind the seen kry ga hmen kuch b ni krna bs hmen ya hook sirf use krna h 
+  means ky ya hook ap ky function ko cache yani momery mn rakh leta h or jitna part fuction ka dubara sy run krny mn use ho rha h kr lo or jo ni ho pa rha wo ni ho pa rha bs or ya sub kuch react behind the seen kry ga hmen kuch b ni krna bs hmen ya hook sirf use krna h 
 
   to ab hm deakhty hn is ko use kesy kren gy 
 
  [ const cachedFn = useCallback(fn, dependencies) ]
   
-  ya h callback hook is mn hm deakh sakty hn ky hook ko aik variable mn store kia ho h or ya aik to fuction leata h or 2nd hm sy dependinces leata h jo ly array farmate mn pass hote hn ab ya dependinces hn kia hmary case mn length , number , char ya sub dependencies hn mean ky in ko jesy hi charean gy function call ho ga 
+  ya h useCallback hook is mn hm deakh sakty hn ky hook ko aik variable mn store kia hoa h or ya aik to fuction leata h or 2nd hm sy dependinces leata h jo ky array farmate mn pass hote hn ab ya dependinces hn kia hmary case mn length , number , char ya sub dependencies hn mean ky in ko jesy hi charean gy function call ho ga 
 
   */
 
@@ -65,14 +65,14 @@ function App() {
     }
     if (charAllowed) str += "!@#$%^&*-_+=[]{}~`"; // this is short hand notation of if else in js
 
-    //now we make a loop to gennerate password and hmen deakhne gy ky loop kitni bar chalaen wo hm chack kren gy hmari ength ki value si bcz hmary project ki requirement h ky pasword ki letnght hamry length varaiable kky mutabic ho
+    //now we make a loop to gennerate password and hmen deakhne gy ky loop kitni bar chalaen wo hm chack kren gy hmari length ki value sy bcz hmary project ki requirement h ky pasword ki lenght hamry length varaiable ky mutabic ho
 
     for (let i = 1; i <= length; i++) {
       //now get random number mean array ki koi rendom index value hm lean gy
       let char = Math.floor(Math.random() * str.length + 1); // ab hmary pass aik charactor ki index value aai h
 
-      // now we get charator by its index number which we get in char varoable and store it to our pass variable
-      pass += str.charAt(char); //ab jesy hi ya loop end ho gi hmary pass varable mn hmara random password aa jy ga ab loop sy bhar ja ky set password mn hm pass ko add kr dean dy to hmara pasword generate hpo jy ga
+      // now we get charator by its index number which we get in char variable and store it to our pass variable
+      pass += str.charAt(char); //ab jesy hi ya loop end ho gi hmary pass varable mn hmara random password aa jy ga ab loop sy bhar ja ky set password mn hm pass ko add kr dean gy to hmara pasword generate ho jy ga
     }
 
     //add pass to setPassword Q ky satate isi trha sy update ho gi
@@ -90,9 +90,9 @@ function App() {
   //step (4) ==> after Ui compilition we see how we get our generated pasword to show in ui
 
   /*   
-  1st thing hm passworGenerator fuction ko directroly run kr dean us sy hmen butr sary eerror melen gy bcz react behainde the seen rendreing krti h or us ki wja sy error aye ga Q ky hm useCallBack hook wagera use kr rhy hn to wo problem krty hn
+  1st thing hm passworGenerator fuction ko directroly run kr dean us sy hmen bhot sary error melen gy bcz react behainde the seen rendreing krti h or us ki wja sy error aye ga Q ky hm useCallBack hook wagera use kr rhy hn to wo problem krty hn
 
-  2nd thing is we made a button and by clicking on this button we get password but ham chaty hn ky page jesy load ho fuction run ko automatically to us ky leye hmen aik or hook deakhna pry ga jo h useEffect hook is ka useage almost same h jessy hn ny useCallBack mn kia tha
+  2nd thing is we made a button and by clicking on this button we get password but ham chaty hn ky page jesy load ho fuction run ko automatically to us ky leye hmen aik or hook deakhna pry ga jo h useEffect hook is ka useage almost same h jessy hnm ny useCallBack mn kia tha
 
   //3rd thing is useEffect Hook
  
@@ -114,7 +114,7 @@ function App() {
 
   //step (5) ==> how to copy pasword
   /*
-  this is magger chalange ky agr mn yhn sy copy py click krta hn to wo clipboard mn copy ho jana chyea ab clipborad py copy krna koi diffical task ni h liken kia ap ko copy krna h wo difficul task his k leye hm ko ya following step krny pareny gy 
+  this is magger chalange ky agr mn yhn sy copy py click krta hn to wo clipboard mn copy ho jana chyea ab clipborad py copy krna koi diffical task ni h liken kia ap ko copy krna h wo difficul task h is k leye hm ko ya following step krny pareny gy 
   1) select krna pry ga ky sirf yhi input chyea
   2) selection range b btani pry gi ky is input porstion mn sy mn kitny unit copy krna chta hn acctully mn 
   3) phr mujhy brower ya system ka jo clipboard h us ka b access chyea 
@@ -167,7 +167,7 @@ function App() {
             className="outline-none w-full py-1 px-3"
             placeholder="password"
             readOnly
-            ref={passwordRef} //ab hmry pass referance h liken jb tk kisi btn py onclick ni llagaen gy to tb tk ya refernce hawa mn ho ga
+            ref={passwordRef} //ab hmry pass referance h liken jb tk kisi btn py onclick ni lagaen gy to tb tk ya refernce hawa mn ho ga
           />
           <button
             className="outline-none bg-blue-700 text-white px-3 py-0.5 shrink-0"
