@@ -43,7 +43,7 @@ Note :- Hm custom hooks mn react ky buildIn hooks b use kr skty hn jes useState(
 
      useEffect(() => {}, []);
 
-     is mn aik h callback () => {} or dusri h dependinces array [] or is array mn wo chz add kren gy ky in in chzeoun mn koi b change aye ga mn waps sy api call kr ln ga 
+     is mn aik h callback () => {} or dusri h dependinces array [] or is array mn wo chz add kren gy ky in chzeoun mn koi b change aye ga mn waps sy api call kr ln ga 
 
      => Step by Step useEffect Working
 
