@@ -1,0 +1,36 @@
+🎢 Redux Tool Kit RTK 🎢
+
+🧨
+In this Project we bulid a [TO Do] app with RTK Library [RTK libarary aik simple state managment library h ]
+🧨
+
+💢 Setup project 
+
+        we setup project with same method to insatall react with vite  we don't need tailwind right now for this project 
+
+💢 Now step by step project building
+
+💢 Step # 1 [Install RTK]
+
+        Go to RTK website and go to get started option or whn py hm ja ky redux or react redux ko apny project mn install kren gy 
+
+💢 Step # 2 [Make a app Folder]  
+
+        Is mn hm mian mn app ky name sy folder bnaeny gy or us mn aik file banaen gy jis ka name ho ga store.js [" ab ya store kia h ya sirf aik source h jhn sy hmari ki sari values ly leaty hn hmm is ko man leaty hn aik globle varibale type or yhn sy sub chezen lean gy hm "]
+
+        ab ya bn gya hmara store jo hm ny app folder mn bnaya h but aesy file banany sy kam complet ni ho ga is store ko banany ka aik prosess h jo hm ab deakhty hn jis ko follow kr ky hm apna store complet kren gy 
+        Is ky leye hm jaty hn apni store wali file py 
+
+💢 Step # 2 [Make Our Reducer ]  
+        What is reducer ? 
+        Reducer kia hota h ky ap ko store mn kuch b change krna h mean jo b functionality wala part hota h ky kia update kren gy kesy chezeoun ko update kren gy ya sara functionality wala part reducer ky through hi jata h 
+
+        Now we made our reducer 
+
+        RTK mn jo reducer bnta h wo thora sa alg bnta h kesy abhi deakhty hn hm is ko bolty hn reducer ko actually mn "Slice " ab deakhen hm jo mrzi name rakh skty thy but hm naming convantion  "Redux"  ki hi use kren gy 
+
+        For Reducer file hm aik new folder bnaen gy jis ka name rakhen gy "features" ab features ky ander b akg alg feature ho skty hn jesy ky 'login' 'todo' 'product' e.t.c features ho skty hn  abhi hm is feature ky ander "todo" bna ky deakhty hn ta ky hamen andaza to ho or is ky leye hn features ky ander aik or folder bnaty hn jis ka name likhty hn "todo" or is todo folder ky ander hm aik file bnaty hn jis ka name rakhty hn "todoSlice.js" ab deakhen hm Todo.js b likh skty thy koi issue ni h but aik naming convanction h sub ko pta clty ap "RTK " use kr rhy hn is leye Slice sathmn likhen gy 
+
+        Now go to  "todoSlice.js" file and explore it in detail 
+
+        
